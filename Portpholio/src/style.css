@@ -1,0 +1,209 @@
+#home {
+    font-size: 2rem;
+}
+
+.navbar {
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.05rem;
+}
+/* close Navbar */
+.hero{
+    align-content: center;
+    text-align: center;
+    height: 89.5vh;
+    background-color: aqua;
+}
+.hero-img{
+    height: 138px;
+    width: 138px;
+    border-radius: 50%;
+    border: 7px solid rgb(48, 236, 48);
+}
+
+.name {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.typewriter {
+    overflow: hidden; 
+    white-space: nowrap;
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: typing 4s steps(30, end) infinite alternate;
+}
+
+
+@keyframes typing {
+    0%, 100% { width: 0; }
+    50% { width: 100%; }
+}
+
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 5s ease-in forwards;
+    animation-delay: 4s; 
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+
+.fade-in {
+    animation: fadeIn 5s ease-in forwards, fadeOut 5s ease-in forwards infinite; 
+}
+
+/* about start */
+#about{
+    color: white;
+    background-color: #282c34;
+    padding-top: 50px;
+    padding-bottom: 55px;
+}
+
+.left-side img{
+    width: 660px;
+    height: 440px;
+    border-radius: 25px;
+    border: 6px solid gold;
+}
+/* about close */
+
+/* contact form css */
+
+
+.contact-container {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 20px;             /* Padding around the content */
+    border-radius: 8px;       /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 600px;         /* Max width of the form */
+    margin: 0 auto;           /* Center the form */
+
+    
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* contact form css close */
+
+/* footer section */
+.footer {
+    background-color: #282c34; 
+    color: white; 
+    padding: 10px 0; 
+    text-align: center; 
+}
+
+.footer-content {
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+.footer-links {
+    list-style: none; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+    gap: 15px; 
+}
+
+.footer-links li {
+    display: inline; 
+}
+
+.footer-links a {
+    color: white; 
+    text-decoration: none; 
+}
+
+.footer-links a:hover {
+    text-decoration: underline; 
+}
+/* footer close */
+
+/* media query */
+
+@media (max-width: 500px) {
+    #home {
+        font-size: 1.5rem;
+    }
+    .navbar {
+        text-align: left;
+    }
+    .navbar .nav-link {
+        display: block; 
+        margin-bottom: 10px; 
+    }
+    .btn-outline-success {
+        width: 100%; 
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+    #home {
+        font-size: 1.8rem;
+    }
+    .navbar .nav-link {
+        margin: 0 10px; 
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1000px) {
+    #home {
+        font-size: 2rem;
+    }
+}
