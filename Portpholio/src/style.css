@@ -14,11 +14,30 @@
     height: 89.5vh;
     background-color: aqua;
 }
-.hero-img{
+.hero-img {
     height: 138px;
     width: 138px;
     border-radius: 50%;
     border: 7px solid rgb(48, 236, 48);
+    animation: border-cycle 2s infinite linear;
+}
+
+@keyframes border-cycle {
+    0% {
+        border-color: rgb(48, 236, 48);
+    }
+    25% {
+        border-color: rgb(236, 48, 48);
+    }
+    50% {
+        border-color: rgb(48, 48, 236);
+    }
+    75% {
+        border-color: rgb(236, 236, 48);
+    }
+    100% {
+        border-color: rgb(48, 236, 48);
+    }
 }
 
 .name {
@@ -79,6 +98,19 @@
 }
 /* about close */
 
+
+
+.skilprogressbar{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+
+
+
+
+
 /* contact form css */
 
 
@@ -134,7 +166,11 @@ input:focus, textarea:focus {
 .submit-button:hover {
     background-color: #0056b3;
 }
-
+.contact-bg{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #2f3238;
+}
 
 
 /* contact form css close */

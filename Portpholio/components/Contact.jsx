@@ -3,7 +3,9 @@
 const Contact = () => {
   return (
     <>
-     <div class="contact-container pic-container">
+    <div className="contact-bg">
+
+     <div class="contact-container pic-container" >
         <h2>Contact Us</h2>
         <form class="contact-form">
             <div class="form-group">
@@ -24,6 +26,7 @@ const Contact = () => {
             </div>
             <button type="submit" class="submit-button">Submit</button>
         </form>
+    </div>
     </div>
     </>
   )
