@@ -3,6 +3,8 @@ import Container from "react-bootstrap/Container";
 const Skills = () => {
   return (
     <>
+    <div className="skilsection">
+
      <Container>
       <div className="skilcontainer">
         <h2 style={{ textAlign: "center", fontSize: "60px" }}>My Skills</h2>
@@ -33,6 +35,7 @@ const Skills = () => {
         </div>
       </div>
       </Container>
+    </div>
     </>
   );
 };

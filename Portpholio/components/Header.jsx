@@ -19,7 +19,7 @@ const Header = () => {
               <Nav.Link href="#blog">Blog</Nav.Link>
               <Nav.Link href="#contact">Contact</Nav.Link>
             </Nav>
-            <Button variant="outline-success">Hire Me</Button>
+            <a href="./Contact.jsx"><Button variant="outline-success">Hire Me</Button></a>
           </Navbar.Collapse>
         </Container>
       </Navbar>

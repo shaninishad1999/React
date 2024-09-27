@@ -4,9 +4,10 @@ const Contact = () => {
   return (
     <>
     <div className="contact-bg">
+    <h2 style={{ textAlign: "center", fontSize: "60px", color:"white"}}>Contact Us</h2>
 
      <div class="contact-container pic-container" >
-        <h2>Contact Us</h2>
+       
         <form class="contact-form">
             <div class="form-group">
                 <label for="fullName">Full Name:</label>
