@@ -1,0 +1,12 @@
+npm create vite@latest
+
+Write Your Project Name and press Enter and again enter
+
+choose Javascript  press enter
+and choose React and press enter 
+wait  
+
+cd Project Name
+npm install
+for run Project on server
+npm run dev
