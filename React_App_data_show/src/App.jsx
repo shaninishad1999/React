@@ -32,16 +32,16 @@ const App = () => {
     <>
       <h1>Lorem ipsum dolor sit amet.</h1>
       <table border="1" cellPadding="20">
-        <thead>
+    
           <tr>
             <th>Roll No</th>
             <th>Name</th>
             <th>City</th>
           </tr>
-        </thead>
-        <tbody>
+       
+       
           {ans}
-        </tbody>
+      
       </table>
     </>
   );

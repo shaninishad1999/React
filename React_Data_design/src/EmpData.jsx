@@ -1,25 +1,33 @@
-const EmpData = [
+const EmpData = () => ([
     {
-      rollno: "101",
-      name: "Shanideval",
-      city: "Bhopal",
+      empNo: 101,
+      empName: "Shanideval",
+      empAge: 22,
+      empCity: "Bhopal",
+      empSalary: 24000,
     },
     {
-      rollno: "102",
-      name: "Shani",
-      city: "Bhopal",
+      empNo: 102,
+      empName: "John Doe",
+      empAge: 25,
+      empCity: "Delhi",
+      empSalary: 30000,
     },
     {
-      rollno: "103",
-      name: "Deval",
-      city: "Bhopal",
+      empNo: 103,
+      empName: "Jane Smith",
+      empAge: 28,
+      empCity: "Mumbai",
+      empSalary: 35000,
     },
     {
-      rollno: "104",
-      name: "Shanideval",
-      city: "Bhopal",
-    },
-  ];
+      empNo: 104,
+      empName: "Rahul Gupta",
+      empAge: 24,
+      empCity: "Kolkata",
+      empSalary: 28000,
+    }
+  ]);
   
   export default EmpData;
   
