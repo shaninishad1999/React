@@ -1,15 +1,13 @@
-import Form from "./Form"
-import NewFrom from "./NewFrom"
-
+import Form from "./Form";
+import NewFrom from "./NewFrom";
 
 const App = () => {
   return (
     <>
-    <NewFrom/>
-    {/* <Form/> */}
-    
+      <NewFrom />
+      {/* <Form/> */}
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
