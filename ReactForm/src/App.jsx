@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const App = () => {
-  const [name, setName] = useState("Shanieval");
+  const [name, setName] = useState("Shanideval");
   const myname = () => {
     setName("Shivam");
   };
