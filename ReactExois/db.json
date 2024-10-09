@@ -1,0 +1,40 @@
+{
+    "students": [
+      {
+        "id": 1,
+        "rollno": "101",
+        "name": "John Doe",
+        "city": "New York",
+        "fees": 1500
+      },
+      {
+        "id": 2,
+        "rollno": "102",
+        "name": "Jane Smith",
+        "city": "Los Angeles",
+        "fees": 1700
+      },
+      {
+        "id": 3,
+        "rollno": "103",
+        "name": "Raj Patel",
+        "city": "Mumbai",
+        "fees": 1300
+      },
+      {
+        "id": 4,
+        "rollno": "104",
+        "name": "Maria Garcia",
+        "city": "Chicago",
+        "fees": 1600
+      },
+      {
+        "id": 5,
+        "rollno": "105",
+        "name": "Ling Wei",
+        "city": "Shanghai",
+        "fees": 1800
+      }
+    ]
+  }
+  
