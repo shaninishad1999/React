@@ -1,0 +1,31 @@
+{
+  "employees": [
+    {
+      "empno": "001",
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "contact": "1234567890",
+      "id": "5320"
+    },
+    {
+      "empno": "002",
+      "name": "Jane Smith",
+      "email": "janesmith@example.com",
+      "contact": "0987654321",
+      "id": "c587"
+    },
+    {
+      "empno": "003",
+      "name": "Alice Johnson",
+      "email": "alicej@example.com",
+      "contact": "1122334455",
+      "id": "d64c"
+    },
+    {
+      "id": "f6a7"
+    },
+    {
+      "id": "788c"
+    }
+  ]
+}

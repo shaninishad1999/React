@@ -1,0 +1,11 @@
+ import { message } from 'antd';
+  message.success("Regiset successfully 🚀");
+  for instaltion command
+  npm i antd
+
+npm install axios
+   npm install react-router-dom
+
+
+for toastyfy
+npm i react-toastify
