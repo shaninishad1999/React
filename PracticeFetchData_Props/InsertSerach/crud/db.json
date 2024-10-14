@@ -1,0 +1,60 @@
+{
+  "employees": [
+    {
+      "id": "d6f1",
+      "empno": "1",
+      "name": "Arjun",
+      "email": "arjun@example.com",
+      "contact": "9876543210"
+    },
+    {
+      "id": "2b7d",
+      "empno": "2",
+      "name": "Priya",
+      "email": "priya@example.com",
+      "contact": "8765432109"
+    },
+    {
+      "id": "f13c",
+      "empno": "3",
+      "name": "Ravi Patel",
+      "email": "ravi@example.com",
+      "contact": "7654321098"
+    },
+    {
+      "id": "4d25",
+      "empno": "4",
+      "name": "Ayesha",
+      "email": "ayesha@example.com",
+      "contact": "6543210987"
+    },
+    {
+      "id": "9d72",
+      "empno": "5",
+      "name": "Vikram",
+      "email": "vikram@example.com",
+      "contact": "5432109876"
+    },
+    {
+      "id": "b8a3",
+      "empno": "6",
+      "name": "Kriti",
+      "email": "kriti@example.com",
+      "contact": "4321098765"
+    },
+    {
+      "id": "a7b9",
+      "empno": "7",
+      "name": "Sunil Kumar",
+      "email": "sunil@example.com",
+      "contact": "3210987654"
+    },
+    {
+      "id": "6e0d",
+      "empno": "101",
+      "name": "Meenal",
+      "email": "meenal@example.com",
+      "contact": "2109876543"
+    }
+  ]
+}

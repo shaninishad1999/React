@@ -1,0 +1,18 @@
+/* Homesec.css */
+@keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .h3-marquee {
+    display: inline-block;
+    white-space: nowrap; /* Prevents the text from wrapping */
+    animation: marquee 10s linear infinite; /* Marquee animation */
+  }
+  h3{
+      color: brown;
+  }

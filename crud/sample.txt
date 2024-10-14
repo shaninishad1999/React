@@ -1,0 +1,6 @@
+npm install react-bootstrap bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';  use it in app.jsx file
+npm install react-router-dom
+npm install axios
+npm install react-toastify
+npm install antd

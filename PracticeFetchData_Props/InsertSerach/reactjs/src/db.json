@@ -1,0 +1,26 @@
+{
+    "students":[
+        {
+            "id":1,
+            "rollno":121,
+            "name":"Kamlesh",
+            "city":"Bhopal",
+            "fees":25000
+        },
+        {
+            "id":2,
+            "rollno":122,
+            "name":"Sani",
+            "city":"Indore",
+            "fees":4000
+        },
+        {
+            "id":3,
+            "rollno":123,
+            "name":"Ankita",
+            "city":"Jabalpur",
+            "fees":5000
+        }
+
+    ]
+}
