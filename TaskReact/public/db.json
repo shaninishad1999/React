@@ -1,0 +1,18 @@
+{
+  "employees": [
+    {
+      "empId": "101",
+      "name": "John Doe",
+      "designation": "Software Engineer",
+      "department": "Development",
+      "basicSalary": 50000
+    },
+    {
+      "empId": "102",
+      "name": "Jane Smith",
+      "designation": "Project Manager",
+      "department": "Management",
+      "basicSalary": 60000
+    }
+  ]
+}

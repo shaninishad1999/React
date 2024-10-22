@@ -1,19 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 
-const EmployeeTable = () => {
-  const [employees, setEmployees] = useState([]);
-
-  // Fetch data from the mock JSON Server
-  useEffect(() => {
-    axios.get('http://localhost:3000/employees')
-      .then((response) => {
-        setEmployees(response.data);
-      })
-      .catch((error) => {
-        console.error('Error fetching data:', error);
-      });
-  }, []);
+const EmployeeTable = ({ employees }) => {
+  // Ensure employees is an array before checking length
+  if (!employees || employees.length === 0) {
+    return <p style={{ textAlign: 'center' }}>No employee data available.</p>;
+  }
 
   return (
     <div>

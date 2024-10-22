@@ -1,15 +1,16 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import React from 'react';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <>
-      <Navbar bg="primary" variant="dark" expand="lg" sticky="top" className="custom-navbar">
+      {/* Navbar */}
+      <Navbar bg="dark" variant="dark" expand="lg" sticky="top" className="custom-navbar">
         <Container>
           <Navbar.Brand as={Link} to="/" className="navbar-brand-custom">
-            Cybrom Pvt Ltd
+            <img src="/path-to-your-logo.png" alt="TechHub Logo" className="logo-img" />
+            TechHub Pvt Ltd
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -26,9 +27,6 @@ const Header = () => {
               <Nav.Link as={Link} to="/search" className="nav-link-custom">
                 Search
               </Nav.Link>
-              <Nav.Link as={Link} to="/searchbyname" className="nav-link-custom">
-                SearchByName
-              </Nav.Link>
               <Nav.Link as={Link} to="/update" className="nav-link-custom">
                 Update
               </Nav.Link>
@@ -38,11 +36,12 @@ const Header = () => {
       </Navbar>
 
       <style jsx>{`
+        /* Navbar Styles */
         .custom-navbar {
           padding: 1rem;
           font-size: 1.2rem;
           font-weight: bold;
-          background: linear-gradient(90deg, rgba(33, 150, 243, 1) 0%, rgba(0, 123, 255, 1) 100%);
+          background-color: #343a40;
         }
 
         .navbar-brand-custom {
@@ -50,42 +49,32 @@ const Header = () => {
           font-size: 1.6rem;
           color: #fff !important;
           letter-spacing: 1px;
-          transition: color 0.3s ease;
+          display: flex;
+          align-items: center;
+          transition: color 0.4s ease-in-out, transform 0.6s ease;
         }
 
         .navbar-brand-custom:hover {
-          color: #ddd !important;
+          color: #4fc3f7 !important; /* New hover color */
+          transform: scale(1.15);
+        }
+
+        .logo-img {
+          width: 40px;
+          margin-right: 10px;
         }
 
         .nav-link-custom {
-          color: white !important;
+          color: #e1bee7 !important;
           margin-left: 20px;
-          transition: color 0.3s ease;
+          transition: color 0.4s ease-in-out, transform 0.4s ease-in-out;
         }
 
         .nav-link-custom:hover {
-          color: #ffc107 !important;
-        }
-
-        .nav-link-custom.active {
-          color: #ffc107 !important;
-        }
-
-        @media screen and (max-width: 768px) {
-          .custom-navbar {
-            font-size: 1rem;
-          }
-
-          .navbar-brand-custom {
-            font-size: 1.3rem;
-          }
-
-          .nav-link-custom {
-            margin-left: 10px;
-          }
+          color: #4fc3f7 !important; /* New hover color */
+          transform: scale(1.1);
         }
       `}</style>
-      
     </>
   );
 };

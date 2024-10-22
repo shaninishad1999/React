@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <>
@@ -6,12 +8,12 @@ const Home = () => {
           <h2>Welcome to Your Employee Portal</h2>
           <p>Efficiently manage and track employee data in one place.</p>
           <div className="button-group">
-            <a href="/insert" className="btn btn-primary">
+            <Link to="/insert" className="btn btn-primary">
               Add Employee
-            </a>
-            <a href="/display" className="btn btn-secondary">
+            </Link>
+            <Link to="/display" className="btn btn-secondary">
               View Employees
-            </a>
+            </Link>
           </div>
         </div>
         <div className="image-container">

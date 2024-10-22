@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="container">
           <p>&copy; 2024 Cybrom Pvt Ltd. All Rights Reserved.</p>
           <p>
-            <a href="mailto:info@company.com">info@company.com</a> | 
+            {/* <a href="mailto:info@company.com">info@company.com</a> |  */}
             <a href="https://www.company.com" target="_blank" rel="noreferrer"> www.company.com</a>
           </p>
         </div>
@@ -17,7 +17,6 @@ const Footer = () => {
           color: white;
           padding: 20px 0;
           text-align: center;
-          position: fixed;
           bottom: 0;
           left: 0;
           width: 100%;
@@ -30,14 +29,14 @@ const Footer = () => {
         }
 
         .footer a {
-          color: #ffc107;
+          color: #4fc3f7; /* New link color */
           text-decoration: none;
           margin: 0 10px;
           transition: color 0.3s ease;
         }
 
         .footer a:hover {
-          color: #fff;
+          color: #fff; /* Hover color */
         }
 
         @media screen and (max-width: 768px) {

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-
-const EmployeeForm = () => {
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+const EmployeeForm = ({ addEmployee }) => {
   const [employee, setEmployee] = useState({
     empId: '',
     name: '',
@@ -19,9 +20,18 @@ const EmployeeForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Employee Record:', employee);
-    alert('Employee Record Submitted!');
-    
+    addEmployee(employee); // Pass the new employee data to the parent component
+
+    // Show a success toast notification
+    toast.success('Employee Record Submitted Successfully!', {
+      position: "top-center",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+    });
+
     // Clear form after submission
     setEmployee({
       empId: '',
@@ -38,7 +48,7 @@ const EmployeeForm = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        height: '100vh' // Makes the form vertically centered within the viewport
+        height: '100vh'
       }}
     >
       <div style={{ width: '400px', padding: '20px', border: '1px solid #ccc', borderRadius: '10px' }}>
@@ -114,6 +124,8 @@ const EmployeeForm = () => {
             <button type="submit" style={{ padding: '10px 20px' }}>Submit</button>
           </div>
         </form>
+        {/* Toastify Container */}
+        <ToastContainer />
       </div>
     </div>
   );
