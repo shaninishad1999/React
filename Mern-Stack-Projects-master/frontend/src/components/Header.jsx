@@ -6,28 +6,30 @@ const Header = () => {
   return (
     <>
       {/* Navbar */}
-      <Navbar bg="dark" variant="dark" expand="lg" sticky="top" className="custom-navbar">
+      <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
         <Container>
-          <Navbar.Brand as={Link} to="/" className="navbar-brand-custom">
-            <img src="/path-to-your-logo.png" alt="TechHub Logo" className="logo-img" />
+          <Navbar.Brand as={Link} to="/" className="navbar-brand">
             TechHub Pvt Ltd
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link as={Link} to="/home" className="nav-link-custom">
+              <Nav.Link as={Link} to="/home" className="nav-link">
                 Home
               </Nav.Link>
-              <Nav.Link as={Link} to="/insert" className="nav-link-custom">
+              <Nav.Link as={Link} to="/insert" className="nav-link">
                 Insert
               </Nav.Link>
-              <Nav.Link as={Link} to="/display" className="nav-link-custom">
+              <Nav.Link as={Link} to="/display" className="nav-link">
                 Display
               </Nav.Link>
-              <Nav.Link as={Link} to="/search" className="nav-link-custom">
+              <Nav.Link as={Link} to="/search" className="nav-link">
                 Search
               </Nav.Link>
-              <Nav.Link as={Link} to="/update" className="nav-link-custom">
+              <Nav.Link as={Link} to="/searchbyname" className="nav-link">
+                SearchByName
+              </Nav.Link>
+              <Nav.Link as={Link} to="/update" className="nav-link">
                 Update
               </Nav.Link>
             </Nav>
@@ -37,42 +39,24 @@ const Header = () => {
 
       <style jsx>{`
         /* Navbar Styles */
-        .custom-navbar {
-          padding: 1rem;
-          font-size: 1.2rem;
-          font-weight: bold;
-          background-color: #343a40;
-        }
-
-        .navbar-brand-custom {
-          font-family: 'Arial', sans-serif;
-          font-size: 1.6rem;
+        .navbar-brand {
+          font-size: 1.5rem;
           color: #fff !important;
-          letter-spacing: 1px;
-          display: flex;
-          align-items: center;
-          transition: color 0.4s ease-in-out, transform 0.6s ease;
+          transition: color 0.3s ease-in-out;
         }
 
-        .navbar-brand-custom:hover {
-          color: #4fc3f7 !important; /* New hover color */
-          transform: scale(1.15);
+        .navbar-brand:hover {
+          color: #4fc3f7 !important;
         }
 
-        .logo-img {
-          width: 40px;
-          margin-right: 10px;
+        .nav-link {
+          color: #ccc !important;
+          margin-left: 15px;
+          transition: color 0.3s ease-in-out;
         }
 
-        .nav-link-custom {
-          color: #e1bee7 !important;
-          margin-left: 20px;
-          transition: color 0.4s ease-in-out, transform 0.4s ease-in-out;
-        }
-
-        .nav-link-custom:hover {
-          color: #4fc3f7 !important; /* New hover color */
-          transform: scale(1.1);
+        .nav-link:hover {
+          color: white !important;
         }
       `}</style>
     </>

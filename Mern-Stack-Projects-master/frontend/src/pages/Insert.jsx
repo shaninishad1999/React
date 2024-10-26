@@ -18,7 +18,14 @@ const Insert = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevents the default form submit behavior
+    e.preventDefault();
+
+    // Check for completeness of all fields
+    const { empno, empname, degignation, city, salary } = input;
+    if (!empno || !empname || !degignation || !city || !salary) {
+      toast.error("Please fill in all fields before submitting.");
+      return;
+    }
 
     const api = "http://localhost:8000/employees/employeesave";
     axios.post(api, input)
@@ -28,7 +35,7 @@ const Insert = () => {
         setInput({}); // Reset the input fields after submission
       })
       .catch((err) => {
-        alert(err.response?.data || "An error occurred!");
+        toast.error(err.response?.data || "An error occurred!");
       });
   };
 
@@ -45,7 +52,7 @@ const Insert = () => {
                   type="text" 
                   placeholder="Enter Employee No" 
                   name="empno" 
-                  value={input.empno || ''} // Controlled component
+                  value={input.empno || ''} 
                   onChange={handleInput} 
                 />
               </Form.Group>
@@ -55,7 +62,7 @@ const Insert = () => {
                   type="text" 
                   placeholder="Enter Name" 
                   name="empname" 
-                  value={input.empname || ''} // Controlled component
+                  value={input.empname || ''} 
                   onChange={handleInput} 
                 />
               </Form.Group>
@@ -65,7 +72,7 @@ const Insert = () => {
                   type="text" 
                   placeholder="Enter Designation" 
                   name="degignation" 
-                  value={input.degignation || ''} // Controlled component
+                  value={input.degignation || ''} 
                   onChange={handleInput} 
                 />
               </Form.Group>
@@ -75,7 +82,7 @@ const Insert = () => {
                   type="text" 
                   placeholder="Enter City" 
                   name="city" 
-                  value={input.city || ''} // Controlled component
+                  value={input.city || ''} 
                   onChange={handleInput} 
                 />
               </Form.Group>
@@ -85,7 +92,7 @@ const Insert = () => {
                   type="text" 
                   placeholder="Enter Salary" 
                   name="salary" 
-                  value={input.salary || ''} // Controlled component
+                  value={input.salary || ''} 
                   onChange={handleInput} 
                 />
               </Form.Group>

@@ -34,13 +34,31 @@ const empDatadisplay=async(req,res)=>{
     }
     
 }
-const empSearch =async(req,res)=>{
-     let ={empno}=req.body;
-     const myData=await EmpModel.find({empno:empno})
-    //  console.log("ok")
-    //  res.send("Chal gya!!")
-     res.send(myData)
-}
+const empSearch = async (req, res) => {
+  const { empno } = req.body; // Extract empno from the request body
+
+  // Validate empno
+  if (!empno || isNaN(empno)) {
+      return res.status(400).json({ error: "Employee number must be provided and must be a number." });
+  }
+
+  // Convert empno to a number
+  const numericEmpno = Number(empno);
+
+  try {
+      const employee = await Employee.findOne({ empno: numericEmpno });
+      if (!employee) {
+          return res.status(404).json({ message: "Employee not found." });
+      }
+      return res.status(200).json(employee);
+  } catch (err) {
+      console.error("Database Error:", err); // Log the error to the console
+      return res.status(500).json({ error: "An error occurred while searching for the employee." });
+  }
+};
+
+
+  
 const employeeUpdateDisplay=async(req,res)=>{
     const Data=await EmpModel.find();
     // console.log("Done")

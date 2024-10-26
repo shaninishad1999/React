@@ -3,10 +3,11 @@ const Footer = () => {
     <>
       <footer className="footer">
         <div className="container">
-          <p>&copy; 2024 Cybrom Pvt Ltd. All Rights Reserved.</p>
+          <p>&copy; 2024 TechHub Pvt Ltd. All Rights Reserved.</p>
           <p>
-            {/* <a href="mailto:info@company.com">info@company.com</a> |  */}
-            <a href="https://www.company.com" target="_blank" rel="noreferrer"> www.company.com</a>
+            <a href="https://www.company.com" target="_blank" rel="noreferrer">
+              TechHub Pvt Ltd
+            </a>
           </p>
         </div>
       </footer>
@@ -15,12 +16,12 @@ const Footer = () => {
         .footer {
           background-color: #343a40;
           color: white;
-          padding: 20px 0;
-          text-align: center;
-          bottom: 0;
-          left: 0;
           width: 100%;
-          z-index: 1000; /* Ensures it stays above other elements */
+          height: 80px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
         }
 
         .footer p {
@@ -29,19 +30,21 @@ const Footer = () => {
         }
 
         .footer a {
-          color: #4fc3f7; /* New link color */
+          color: #fff;
           text-decoration: none;
           margin: 0 10px;
-          transition: color 0.3s ease;
+          transition: color 0.2s ease; /* Simple hover transition */
         }
 
         .footer a:hover {
-          color: #fff; /* Hover color */
+          color: #4fc3f7; /* Hover color */
         }
 
         @media screen and (max-width: 768px) {
           .footer {
             font-size: 0.9rem;
+            height: auto;
+            padding: 15px 0;
           }
         }
       `}</style>
