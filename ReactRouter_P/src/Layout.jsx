@@ -17,19 +17,19 @@ const Layout = () => {
         <div
           style={{ textAlign: "center", fontSize: "40px", marginLeft: "10px" }}
         >
-          <Link style={{ textDecoration: "none", margin: "10px" }} to="home">
+          <Link style={{ textDecoration: "none", margin: "10px", color:"white" }} to="home">
             Home
           </Link>
-          <Link style={{ textDecoration: "none", margin: "10px" }} to="about">
+          <Link style={{ textDecoration: "none", margin: "10px",color:"white" }} to="about">
             About
           </Link>
-          <Link style={{ textDecoration: "none", margin: "10px" }} to="resume">
+          <Link style={{ textDecoration: "none", margin: "10px",color:"white" }} to="resume">
             Resume
           </Link>
-          <Link style={{ textDecoration: "none", margin: "10px" }} to="blog">
+          <Link style={{ textDecoration: "none", margin: "10px",color:"white" }} to="blog">
             Blog
           </Link>
-          <Link style={{ textDecoration: "none", margin: "10px" }} to="contact">
+          <Link style={{ textDecoration: "none", margin: "10px",color:"white" }} to="contact">
             Contact
           </Link>
         </div>
