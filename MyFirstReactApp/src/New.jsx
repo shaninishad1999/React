@@ -7,11 +7,7 @@ const New=()=>{
     return(
         <>
         <h1>Application Form</h1>
-        Enter First Name : <input type="text" /> <br/><br/>
-        Enter Last Name : <input type="text" /> <br/>
-
-        <hr />
-        <ClasTest/>
+   
         </>
     )
 }

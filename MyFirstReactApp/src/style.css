@@ -1,0 +1,18 @@
+.container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .heading-primary {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  .heading-secondary {
+    font-size: 20px;
+    color: blue;
+    margin-bottom: 15px;
+  }
+  
