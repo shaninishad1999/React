@@ -1,0 +1,40 @@
+{
+  "EmpInfo": [
+    {
+      "id": "1",
+      "firstName ": "John",
+      "lastName": "Doe",
+      "digignation": "Manager",
+      "email": "admin@gmail.com",
+      "phone": "1234567890",
+      "address": "1234 Main St",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10001"
+    },
+    {
+      "id": "cdea",
+      "firstName": "dsa",
+      "lastName": "sad",
+      "designation": "sad",
+      "email": "cebaxeg912@btcours.comsad",
+      "phone": "asasda",
+      "address": "dsa",
+      "city": "sad",
+      "state": "sad",
+      "zip": "sda"
+    },
+    {
+      "id": "c6f2",
+      "firstName": "shanidevl",
+      "lastName": "sdfkjha",
+      "designation": "ad",
+      "email": "hema@gmail.com",
+      "phone": "6386397325",
+      "address": "sdfsfadasdfdsaea",
+      "city": "Azamgarh, UP",
+      "state": "asd",
+      "zip": "25461"
+    }
+  ]
+}

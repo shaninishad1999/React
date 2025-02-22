@@ -1,0 +1,39 @@
+{
+  "stuinfo": [
+    {
+      "name": "John Doe",
+      "city": "New York",
+      "contact": "1234567890",
+      "email": "johndoe@example.com",
+      "id": "4ba8"
+    },
+    {
+      "id": "300d",
+      "name": "shanideval",
+      "city": "azamgarh",
+      "contact": "6456",
+      "email": "mapil69337@btcours.com"
+    },
+    {
+      "id": "f3b0",
+      "name": "fdsfw",
+      "city": "sdsf",
+      "contact": "dsf",
+      "email": "cebaxeg912@btcours.com"
+    },
+    {
+      "id": "ec1a",
+      "name": "fdsfw",
+      "city": "sdsf",
+      "contact": "dsf",
+      "email": "cebaxeg912@btcours.com"
+    },
+    {
+      "id": "3684",
+      "name": "fdsfw",
+      "city": "sdsf",
+      "contact": "dsf",
+      "email": "cebaxeg912@btcours.com"
+    }
+  ]
+}
