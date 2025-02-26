@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import Layout from "./Layout";
 import Search from "./pages/Search";
 import Contact from "./pages/Contact";
+import EditData from "./pages/EditData";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="search" element={<Search />} />
           <Route path="display" element={<Display />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="editdata/:id" element={<EditData />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

@@ -2,17 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 const Insert = () => {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    designation: "",
-    email: "",
-    phone: "",
-    address: "",
-    city: "",
-    state: "",
-    zip: "",
-  });
+  const [formData, setFormData] = useState({});
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
