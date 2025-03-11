@@ -1,0 +1,28 @@
+{
+  "Employees": [
+    {
+      "id": "101",
+      "empname": "Shanideval",
+      "empcity": "Bhopal",
+      "empsalary": 25000
+    },
+    {
+      "id": "105",
+      "empname": "Priya Verma",
+      "empcity": "Pune",
+      "empsalary": "200"
+    },
+    {
+      "id": "107",
+      "empname": "Kavita Joshi",
+      "empcity": "Chennai",
+      "empsalary": 35000
+    },
+    {
+      "id": "108",
+      "empname": "Sandeep Yadav",
+      "empcity": "Lucknow",
+      "empsalary": 29000
+    }
+  ]
+}
