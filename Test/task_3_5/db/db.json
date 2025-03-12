@@ -1,0 +1,53 @@
+{
+  "Employees": [
+    {
+      "id": "101",
+      "empname": "Amit Sharma",
+      "empcity": "Software Engineer",
+      "empdepartment": "IT",
+      "empsalary": "75000"
+    },
+    {
+      "id": "102",
+      "empname": "Priya Verma",
+      "empcity": "HR Manager",
+      "empdepartment": "Human Resources",
+      "empsalary": "68000"
+    },
+    {
+      "id": "103",
+      "empname": "Rajesh Iyer",
+      "empcity": "Finance Analyst",
+      "empdepartment": "Finance",
+      "empsalary": "72000"
+    },
+    {
+      "id": "104",
+      "empname": "Neha Patil",
+      "empcity": "Marketing Executive",
+      "empdepartment": "Marketing",
+      "empsalary": "64000"
+    },
+    {
+      "id": "105",
+      "empname": "Suresh Nair",
+      "empcity": "Operations Manager",
+      "empdepartment": "Operations",
+      "empsalary": "85000"
+    },
+    {
+      "id": "106",
+      "empname": "Shanideval",
+      "empcity": "Java",
+      "empdepartment": "IT",
+      "empsalary": "45000"
+    },
+    {
+      "id": "106",
+      "empname": "Shanideval",
+      "empcity": "Java",
+      "empdepartment": "IT",
+      "empsalary": "45000"
+    }
+  ]
+}
