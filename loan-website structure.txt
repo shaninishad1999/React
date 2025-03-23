@@ -1,0 +1,55 @@
+loan-website/
+│── public/                   
+│── src/
+│   ├── api/                  # API request functions (fetch, axios)
+│   │   ├── authApi.js        # API calls for authentication (login, signup)
+│   │   ├── loanApi.js        # API calls for loan applications
+│   │   ├── userApi.js        # API calls for user-related data
+│   │   ├── adminApi.js       # API calls for admin operations
+│   │
+│   ├── components/          
+│   │   ├── Navbar.jsx
+│   │   ├── Footer.jsx
+│   │   ├── LoanCalculator.jsx
+│   │   ├── LoanForm.jsx
+│   │   ├── DashboardCard.jsx
+│   │   ├── AdminSidebar.jsx
+│   │   ├── ProtectedRoute.jsx
+│   │
+│   ├── pages/                
+│   │   ├── Home.jsx
+│   │   ├── Login.jsx
+│   │   ├── Signup.jsx
+│   │   ├── Dashboard.jsx
+│   │   ├── ApplyLoan.jsx
+│   │   ├── Profile.jsx
+│   │   ├── AdminDashboard.jsx
+│   │   ├── ManageUsers.jsx
+│   │   ├── ManageLoans.jsx
+│   │
+│   ├── context/              
+│   │   ├── AuthContext.jsx
+│   │   ├── LoanContext.jsx
+│   │
+│   ├── hooks/                
+│   │   ├── useAuth.js
+│   │   ├── useLoans.js
+│   │
+│   ├── services/             
+│   │   ├── authService.js
+│   │   ├── loanService.js
+│   │
+│   ├── utils/                
+│   │   ├── loanCalculator.js
+│   │   ├── formatDate.js
+│   │
+│   ├── routes/               
+│   │   ├── AppRoutes.jsx
+│   │
+│   ├── App.js                
+│   ├── index.js              
+│
+│── .env                      
+│── package.json              
+│── tailwind.config.js        
+│── README.md                 
